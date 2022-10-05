@@ -6,6 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+        }
+
+
+
+        label[for="black"] {
+            background-color: black
+        }
+
+        label[for="red"] {
+            background-color: red
+        }
+
+        label[for="green"] {
+            background-color: green
+        }
+
+        label[for="blue"] {
+            background-color: blue
+        }
+
+        label[for="yellow"] {
+            background-color: yellow
+        }
+
+        label[for="magenta"] {
+            background-color: magenta
+        }
+
+        label[for="cyan"] {
+            background-color: cyan
+        }
+
+        label[for="white"] {
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .true {
+            border-width: 4px !important;
+            border-color: orangered !important;
+            border-style: solid !important;
+        }
+
+
+        form {
+            display: block;
+            width: fit-content;
+            transform: translateX(-50%);
+            padding: 15px 25px;
+            position: sticky;
+            bottom: 20px;
+            left: 50%;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,388 +84,461 @@
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 1292 870" style="enable-background:new 0 0 1292 870;" xml:space="preserve">
         <style type="text/css">
-            .btn{
-                fill:rgba(0,0,0,0);
+            .btn {
+                fill: rgba(0, 0, 0, 0);
             }
-            .visible{
-                fill:rgba(0,0,0,100%);
+
+            .black {
+                fill: rgba(0, 0, 0, 100%);
+            }
+
+            .red {
+                fill: rgba(255, 0, 0, 100%);
+            }
+
+            .green {
+                fill: rgba(0, 255, 0, 100%);
+            }
+
+            .blue {
+                fill: rgba(0, 0, 255, 100%);
+            }
+
+            .yellow {
+                fill: rgba(255, 255, 0, 100%);
+            }
+
+            .magenta {
+                fill: rgba(255, 0, 255, 100%);
+            }
+
+            .cyan {
+                fill: rgba(0, 255, 255, 100%);
+            }
+
+            .white {
+                fill: rgba(255, 255, 255, 100%);
             }
         </style>
         <g id="clue">
-
-            <image style="overflow:visible;" width="493" height="332" id="clue_1_" href="clue.png" transform="matrix(2.6213 0 0 2.6213 1 0)">
+            <image style="overflow:visible;" width="493" height="332" id="clue_1_" href="clue.png"
+                transform="matrix(2.6213 0 0 2.6213 1 0)">
             </image>
         </g>
         <g id="brtns">
-            <rect x="255.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="282.5" y="312.5" class="btn" width="19" height="34" />
-            <rect x="306.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="344.5" y="357.5" class="btn" width="20" height="34" />
-            <rect x="325.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="364.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="277.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="272.5" y="401.5" class="btn" width="19" height="34" />
-            <rect x="287.5" y="445.5" class="btn" width="19" height="34" />
-            <rect x="268.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="266.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="254.5" y="580.5" class="btn" width="20" height="34" />
-            <rect x="274.5" y="623.5" class="btn" width="15" height="34" />
-            <rect x="274.5" y="668.5" class="btn" width="17" height="34" />
-            <rect x="289.5" y="623.5" class="btn" width="20" height="34" />
-            <rect x="291.5" y="668.5" class="btn" width="20" height="34" />
-            <rect x="309.5" y="623.5" class="btn" width="20" height="34" />
-            <rect x="311.5" y="668.5" class="btn" width="16" height="34" />
-            <rect x="327.5" y="668.5" class="btn" width="16" height="34" />
-            <rect x="343.5" y="668.5" class="btn" width="22" height="34" />
-            <rect x="365.5" y="668.5" class="btn" width="21" height="34" />
-            <rect x="386.5" y="668.5" class="btn" width="17" height="34" />
-            <rect x="403.5" y="668.5" class="btn" width="16" height="34" />
-            <rect x="419.5" y="668.5" class="btn" width="21" height="34" />
-            <rect x="468.5" y="668.5" class="btn" width="19" height="34" />
-            <rect x="440.5" y="668.5" class="btn" width="14" height="34" />
-            <rect x="454.5" y="668.5" class="btn" width="14" height="34" />
-            <rect x="487.5" y="668.5" class="btn" width="14" height="34" />
-            <rect x="501.5" y="668.5" class="btn" width="12" height="34" />
-            <rect x="513.5" y="668.5" class="btn" width="10" height="34" />
-            <rect x="345.5" y="623.5" class="btn" width="22" height="34" />
-            <rect x="367.5" y="623.5" class="btn" width="22" height="34" />
-            <rect x="309.5" y="580.5" class="btn" width="17" height="34" />
-            <rect x="326.5" y="580.5" class="btn" width="16" height="34" />
-            <rect x="329.5" y="623.5" class="btn" width="16" height="34" />
-            <rect x="342.5" y="580.5" class="btn" width="17" height="34" />
-            <rect x="359.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="291.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="286.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="274.5" y="580.5" class="btn" width="17" height="34" />
-            <rect x="303.5" y="535.5" class="btn" width="19" height="34" />
-            <rect x="287.5" y="490.5" class="btn" width="15" height="34" />
-            <rect x="316.5" y="490.5" class="btn" width="20" height="34" />
-            <rect x="336.5" y="490.5" class="btn" width="20" height="34" />
-            <rect x="332.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="367.5" y="535.5" class="btn" width="19" height="34" />
-            <rect x="406.5" y="535.5" class="btn" width="21" height="34" />
-            <rect x="349.5" y="535.5" class="btn" width="18" height="34" />
-            <rect x="398.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="389.5" y="623.5" class="btn" width="18" height="34" />
-            <rect x="416.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="434.5" y="580.5" class="btn" width="22" height="34" />
-            <rect x="456.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="475.5" y="580.5" class="btn" width="20" height="34" />
-            <rect x="495.5" y="580.5" class="btn" width="20" height="34" />
-            <rect x="528.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="569.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="595.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="613.5" y="580.5" class="btn" width="18" height="34" />
-            <rect x="655.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="695.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="695.5" y="623.5" class="btn" width="17" height="34" />
-            <rect x="712.5" y="623.5" class="btn" width="16" height="34" />
-            <rect x="728.5" y="623.5" class="btn" width="16" height="34" />
-            <rect x="744.5" y="623.5" class="btn" width="13" height="34" />
-            <rect x="757.5" y="623.5" class="btn" width="10" height="34" />
-            <rect x="767.5" y="623.5" class="btn" width="17" height="34" />
-            <rect x="784.5" y="623.5" class="btn" width="20" height="34" />
-            <rect x="804.5" y="623.5" class="btn" width="15" height="34" />
-            <rect x="819.5" y="623.5" class="btn" width="22" height="34" />
-            <rect x="841.5" y="623.5" class="btn" width="18" height="34" />
-            <rect x="859.5" y="623.5" class="btn" width="17" height="34" />
-            <rect x="876.5" y="623.5" class="btn" width="20" height="34" />
-            <rect x="896.5" y="623.5" class="btn" width="10" height="34" />
-            <rect x="906.5" y="623.5" class="btn" width="19" height="34" />
-            <rect x="714.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="733.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="752.5" y="580.5" class="btn" width="19" height="34" />
-            <rect x="771.5" y="580.5" class="btn" width="21" height="34" />
-            <rect x="674.5" y="580.5" class="btn" width="21" height="34" />
-            <rect x="631.5" y="580.5" class="btn" width="24" height="34" />
-            <rect x="641.5" y="623.5" class="btn" width="19" height="34" />
-            <rect x="660.5" y="623.5" class="btn" width="15" height="34" />
-            <rect x="675.5" y="623.5" class="btn" width="20" height="34" />
-            <rect x="546.5" y="580.5" class="btn" width="23" height="34" />
-            <rect x="515.5" y="580.5" class="btn" width="13" height="34" />
-            <rect x="366.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="386.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="378.5" y="580.5" class="btn" width="20" height="34" />
-            <rect x="407.5" y="623.5" class="btn" width="17" height="34" />
-            <rect x="424.5" y="623.5" class="btn" width="17" height="34" />
-            <rect x="441.5" y="623.5" class="btn" width="21" height="34" />
-            <rect x="462.5" y="623.5" class="btn" width="19" height="34" />
-            <rect x="481.5" y="623.5" class="btn" width="19" height="34" />
-            <rect x="500.5" y="623.5" class="btn" width="22" height="34" />
-            <rect x="522.5" y="623.5" class="btn" width="22" height="34" />
-            <rect x="523.5" y="668.5" class="btn" width="20" height="34" />
-            <rect x="543.5" y="668.5" class="btn" width="20" height="34" />
-            <rect x="585.5" y="668.5" class="btn" width="20" height="34" />
-            <rect x="605.5" y="668.5" class="btn" width="22" height="34" />
-            <rect x="627.5" y="668.5" class="btn" width="17" height="34" />
-            <rect x="644.5" y="668.5" class="btn" width="19" height="34" />
-            <rect x="663.5" y="668.5" class="btn" width="21" height="34" />
-            <rect x="684.5" y="668.5" class="btn" width="21" height="34" />
-            <rect x="705.5" y="668.5" class="btn" width="19" height="34" />
-            <rect x="724.5" y="668.5" class="btn" width="21" height="34" />
-            <rect x="745.5" y="668.5" class="btn" width="21" height="34" />
-            <rect x="766.5" y="668.5" class="btn" width="18" height="34" />
-            <rect x="784.5" y="668.5" class="btn" width="18" height="34" />
-            <rect x="802.5" y="668.5" class="btn" width="18" height="34" />
-            <rect x="820.5" y="668.5" class="btn" width="18" height="34" />
-            <rect x="838.5" y="668.5" class="btn" width="18" height="34" />
-            <rect x="856.5" y="668.5" class="btn" width="16" height="34" />
-            <rect x="872.5" y="668.5" class="btn" width="16" height="34" />
-            <rect x="888.5" y="668.5" class="btn" width="22" height="34" />
-            <rect x="910.5" y="668.5" class="btn" width="18" height="34" />
-            <rect x="563.5" y="668.5" class="btn" width="15" height="34" />
-            <rect x="544.5" y="623.5" class="btn" width="19" height="34" />
-            <rect x="563.5" y="623.5" class="btn" width="19" height="34" />
-            <rect x="582.5" y="623.5" class="btn" width="20" height="34" />
-            <rect x="602.5" y="623.5" class="btn" width="16" height="34" />
-            <rect x="625.5" y="623.5" class="btn" width="16" height="34" />
-            <rect x="427.5" y="535.5" class="btn" width="22" height="34" />
-            <rect x="385.5" y="490.5" class="btn" width="24" height="34" />
-            <rect x="409.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="302.5" y="490.5" class="btn" width="14" height="34" />
-            <rect x="328.5" y="445.5" class="btn" width="18" height="34" />
-            <rect x="362.5" y="445.5" class="btn" width="14" height="34" />
-            <rect x="376.5" y="445.5" class="btn" width="17" height="34" />
-            <rect x="346.5" y="445.5" class="btn" width="8" height="34" />
-            <rect x="393.5" y="445.5" class="btn" width="9" height="34" />
-            <rect x="354.5" y="445.5" class="btn" width="8" height="34" />
-            <rect x="356.5" y="490.5" class="btn" width="10" height="34" />
-            <rect x="322.5" y="535.5" class="btn" width="10" height="34" />
-            <rect x="291.5" y="401.5" class="btn" width="19" height="34" />
-            <rect x="306.5" y="445.5" class="btn" width="22" height="34" />
-            <rect x="310.5" y="401.5" class="btn" width="19" height="34" />
-            <rect x="329.5" y="401.5" class="btn" width="19" height="34" />
-            <rect x="348.5" y="401.5" class="btn" width="21" height="34" />
-            <rect x="369.5" y="401.5" class="btn" width="20" height="34" />
-            <rect x="389.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="402.5" y="445.5" class="btn" width="18" height="34" />
-            <rect x="426.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="449.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="443.5" y="490.5" class="btn" width="21" height="34" />
-            <rect x="464.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="484.5" y="535.5" class="btn" width="19" height="34" />
-            <rect x="502.5" y="490.5" class="btn" width="16" height="34" />
-            <rect x="559.5" y="490.5" class="btn" width="16" height="34" />
-            <rect x="575.5" y="490.5" class="btn" width="18" height="34" />
-            <rect x="618.5" y="490.5" class="btn" width="18" height="34" />
-            <rect x="617.5" y="535.5" class="btn" width="16" height="34" />
-            <rect x="633.5" y="535.5" class="btn" width="18" height="34" />
-            <rect x="651.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="671.5" y="535.5" class="btn" width="22" height="34" />
-            <rect x="693.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="713.5" y="535.5" class="btn" width="22" height="34" />
-            <rect x="735.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="755.5" y="535.5" class="btn" width="24" height="34" />
-            <rect x="779.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="792.5" y="580.5" class="btn" width="17" height="34" />
-            <rect x="806.5" y="535.5" class="btn" width="16" height="34" />
-            <rect x="809.5" y="580.5" class="btn" width="21" height="34" />
-            <rect x="830.5" y="580.5" class="btn" width="20" height="34" />
-            <rect x="850.5" y="580.5" class="btn" width="17" height="34" />
-            <rect x="867.5" y="580.5" class="btn" width="17" height="34" />
-            <rect x="884.5" y="580.5" class="btn" width="21" height="34" />
-            <rect x="905.5" y="580.5" class="btn" width="23" height="34" />
-            <rect x="928.5" y="580.5" class="btn" width="20" height="34" />
-            <rect x="822.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="839.5" y="535.5" class="btn" width="21" height="34" />
-            <rect x="860.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="877.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="897.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="518.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="483.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="466.5" y="535.5" class="btn" width="18" height="34" />
-            <rect x="503.5" y="535.5" class="btn" width="19" height="34" />
-            <rect x="522.5" y="535.5" class="btn" width="17" height="34" />
-            <rect x="539.5" y="535.5" class="btn" width="18" height="34" />
-            <rect x="557.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="577.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="407.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="425.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="420.5" y="445.5" class="btn" width="18" height="34" />
-            <rect x="438.5" y="445.5" class="btn" width="20" height="34" />
-            <rect x="458.5" y="445.5" class="btn" width="15" height="34" />
-            <rect x="473.5" y="445.5" class="btn" width="15" height="34" />
-            <rect x="488.5" y="445.5" class="btn" width="16" height="34" />
-            <rect x="504.5" y="445.5" class="btn" width="14" height="34" />
-            <rect x="518.5" y="445.5" class="btn" width="13" height="34" />
-            <rect x="646.5" y="445.5" class="btn" width="13" height="34" />
-            <rect x="553.5" y="445.5" class="btn" width="19" height="34" />
-            <rect x="443.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="461.5" y="401.5" class="btn" width="21" height="34" />
-            <rect x="482.5" y="401.5" class="btn" width="17" height="34" />
-            <rect x="499.5" y="401.5" class="btn" width="20" height="34" />
-            <rect x="519.5" y="401.5" class="btn" width="20" height="34" />
-            <rect x="539.5" y="401.5" class="btn" width="22" height="34" />
-            <rect x="531.5" y="445.5" class="btn" width="22" height="34" />
-            <rect x="537.5" y="490.5" class="btn" width="22" height="34" />
-            <rect x="582.5" y="401.5" class="btn" width="22" height="34" />
-            <rect x="578.5" y="445.5" class="btn" width="19" height="34" />
-            <rect x="612.5" y="445.5" class="btn" width="19" height="34" />
-            <rect x="658.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="675.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="692.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="636.5" y="490.5" class="btn" width="22" height="34" />
-            <rect x="599.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="602.5" y="535.5" class="btn" width="15" height="34" />
-            <rect x="597.5" y="445.5" class="btn" width="15" height="34" />
-            <rect x="631.5" y="445.5" class="btn" width="15" height="34" />
-            <rect x="604.5" y="401.5" class="btn" width="22" height="34" />
-            <rect x="630.5" y="401.5" class="btn" width="19" height="34" />
-            <rect x="649.5" y="401.5" class="btn" width="16" height="34" />
-            <rect x="659.5" y="445.5" class="btn" width="18" height="34" />
-            <rect x="561.5" y="401.5" class="btn" width="21" height="34" />
-            <rect x="301.5" y="312.5" class="btn" width="21" height="34" />
-            <rect x="322.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="431.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="446.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="449.5" y="312.5" class="btn" width="17" height="34" />
-            <rect x="466.5" y="312.5" class="btn" width="16" height="34" />
-            <rect x="464.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="482.5" y="312.5" class="btn" width="17" height="34" />
-            <rect x="482.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="501.5" y="357.5" class="btn" width="20" height="34" />
-            <rect x="717.5" y="401.5" class="btn" width="20" height="34" />
-            <rect x="521.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="539.5" y="357.5" class="btn" width="16" height="34" />
-            <rect x="499.5" y="312.5" class="btn" width="17" height="34" />
-            <rect x="516.5" y="312.5" class="btn" width="19" height="34" />
-            <rect x="535.5" y="312.5" class="btn" width="19" height="34" />
-            <rect x="555.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="574.5" y="357.5" class="btn" width="20" height="34" />
-            <rect x="610.5" y="357.5" class="btn" width="20" height="34" />
-            <rect x="630.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="665.5" y="401.5" class="btn" width="17" height="34" />
-            <rect x="669.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="737.5" y="401.5" class="btn" width="15" height="34" />
-            <rect x="754.5" y="445.5" class="btn" width="23" height="34" />
-            <rect x="777.5" y="445.5" class="btn" width="20" height="34" />
-            <rect x="711.5" y="490.5" class="btn" width="20" height="34" />
-            <rect x="731.5" y="490.5" class="btn" width="22" height="34" />
-            <rect x="770.5" y="490.5" class="btn" width="18" height="34" />
-            <rect x="788.5" y="490.5" class="btn" width="16" height="34" />
-            <rect x="797.5" y="445.5" class="btn" width="17" height="34" />
-            <rect x="820.5" y="490.5" class="btn" width="20" height="34" />
-            <rect x="840.5" y="490.5" class="btn" width="20" height="34" />
-            <rect x="860.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="796.5" y="535.5" class="btn" width="10" height="34" />
-            <rect x="916.5" y="490.5" class="btn" width="19" height="34" />
-            <rect x="917.5" y="535.5" class="btn" width="20" height="34" />
-            <rect x="877.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="814.5" y="445.5" class="btn" width="16" height="34" />
-            <rect x="713.5" y="445.5" class="btn" width="24" height="34" />
-            <rect x="737.5" y="445.5" class="btn" width="17" height="34" />
-            <rect x="753.5" y="490.5" class="btn" width="17" height="34" />
-            <rect x="804.5" y="490.5" class="btn" width="16" height="34" />
-            <rect x="686.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="647.5" y="357.5" class="btn" width="22" height="34" />
-            <rect x="703.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="677.5" y="445.5" class="btn" width="17" height="34" />
-            <rect x="720.5" y="357.5" class="btn" width="16" height="34" />
-            <rect x="702.5" y="401.5" class="btn" width="15" height="34" />
-            <rect x="554.5" y="312.5" class="btn" width="19" height="34" />
-            <rect x="589.5" y="312.5" class="btn" width="19" height="34" />
-            <rect x="573.5" y="312.5" class="btn" width="16" height="34" />
-            <rect x="652.5" y="312.5" class="btn" width="9" height="34" />
-            <rect x="594.5" y="357.5" class="btn" width="11" height="34" />
-            <rect x="661.5" y="312.5" class="btn" width="9" height="34" />
-            <rect x="752.5" y="401.5" class="btn" width="9" height="34" />
-            <rect x="761.5" y="401.5" class="btn" width="14" height="34" />
-            <rect x="728.5" y="312.5" class="btn" width="10" height="34" />
-            <rect x="340.5" y="312.5" class="btn" width="16" height="34" />
-            <rect x="356.5" y="312.5" class="btn" width="21" height="34" />
-            <rect x="377.5" y="312.5" class="btn" width="21" height="34" />
-            <rect x="406.5" y="357.5" class="btn" width="19" height="34" />
-            <rect x="425.5" y="357.5" class="btn" width="21" height="34" />
-            <rect x="398.5" y="312.5" class="btn" width="23" height="34" />
-            <rect x="383.5" y="357.5" class="btn" width="23" height="34" />
-            <rect x="274.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="293.5" y="267.5" class="btn" width="24" height="34" />
-            <rect x="317.5" y="267.5" class="btn" width="20" height="34" />
-            <rect x="337.5" y="267.5" class="btn" width="10" height="34" />
-            <rect x="421.5" y="312.5" class="btn" width="10" height="34" />
-            <rect x="296.5" y="357.5" class="btn" width="10" height="34" />
-            <rect x="347.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="364.5" y="267.5" class="btn" width="13" height="34" />
-            <rect x="377.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="396.5" y="267.5" class="btn" width="21" height="34" />
-            <rect x="417.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="434.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="453.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="496.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="539.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="558.5" y="267.5" class="btn" width="18" height="34" />
-            <rect x="576.5" y="267.5" class="btn" width="18" height="34" />
-            <rect x="604.5" y="267.5" class="btn" width="22" height="34" />
-            <rect x="675.5" y="267.5" class="btn" width="20" height="34" />
-            <rect x="695.5" y="267.5" class="btn" width="24" height="34" />
-            <rect x="738.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="719.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="770.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="787.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="804.5" y="267.5" class="btn" width="22" height="34" />
-            <rect x="788.5" y="312.5" class="btn" width="22" height="34" />
-            <rect x="682.5" y="401.5" class="btn" width="20" height="34" />
-            <rect x="826.5" y="267.5" class="btn" width="21" height="34" />
-            <rect x="847.5" y="267.5" class="btn" width="21" height="34" />
-            <rect x="868.5" y="267.5" class="btn" width="19" height="34" />
-            <rect x="887.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="904.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="921.5" y="267.5" class="btn" width="24" height="34" />
-            <rect x="899.5" y="312.5" class="btn" width="22" height="34" />
-            <rect x="755.5" y="267.5" class="btn" width="15" height="34" />
-            <rect x="653.5" y="267.5" class="btn" width="22" height="34" />
-            <rect x="626.5" y="267.5" class="btn" width="10" height="34" />
-            <rect x="636.5" y="267.5" class="btn" width="17" height="34" />
-            <rect x="617.5" y="312.5" class="btn" width="17" height="34" />
-            <rect x="634.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="670.5" y="312.5" class="btn" width="20" height="34" />
-            <rect x="690.5" y="312.5" class="btn" width="20" height="34" />
-            <rect x="710.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="738.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="736.5" y="357.5" class="btn" width="16" height="34" />
-            <rect x="752.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="775.5" y="401.5" class="btn" width="16" height="34" />
-            <rect x="791.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="770.5" y="357.5" class="btn" width="16" height="34" />
-            <rect x="809.5" y="401.5" class="btn" width="15" height="34" />
-            <rect x="786.5" y="357.5" class="btn" width="16" height="34" />
-            <rect x="756.5" y="312.5" class="btn" width="17" height="34" />
-            <rect x="773.5" y="312.5" class="btn" width="15" height="34" />
-            <rect x="810.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="802.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="841.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="859.5" y="401.5" class="btn" width="17" height="34" />
-            <rect x="876.5" y="401.5" class="btn" width="17" height="34" />
-            <rect x="893.5" y="401.5" class="btn" width="18" height="34" />
-            <rect x="911.5" y="401.5" class="btn" width="20" height="34" />
-            <rect x="819.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="846.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="836.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="854.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="864.5" y="312.5" class="btn" width="17" height="34" />
-            <rect x="872.5" y="357.5" class="btn" width="17" height="34" />
-            <rect x="824.5" y="401.5" class="btn" width="17" height="34" />
-            <rect x="830.5" y="445.5" class="btn" width="22" height="34" />
-            <rect x="852.5" y="445.5" class="btn" width="22" height="34" />
-            <rect x="894.5" y="490.5" class="btn" width="22" height="34" />
-            <rect x="894.5" y="445.5" class="btn" width="25" height="34" />
-            <rect x="874.5" y="445.5" class="btn" width="20" height="34" />
-            <rect x="694.5" y="445.5" class="btn" width="19" height="34" />
-            <rect x="889.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="907.5" y="357.5" class="btn" width="18" height="34" />
-            <rect x="881.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="828.5" y="312.5" class="btn" width="18" height="34" />
-            <rect x="472.5" y="267.5" class="btn" width="24" height="34" />
-            <rect x="515.5" y="267.5" class="btn" width="24" height="34" />
+            <rect class="btn" x="253.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="280.73" y="312.5" width="19" height="34" />
+            <rect class="btn" x="304.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="342.73" y="357.5" width="20" height="34" />
+            <rect class="btn" x="323.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="362.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="275.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="270.73" y="401.5" width="19" height="34" />
+            <rect class="btn" x="285.73" y="445.5" width="19" height="34" />
+            <rect class="btn" x="266.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="264.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="252.73" y="580.5" width="20" height="34" />
+            <rect class="btn" x="272.73" y="623.5" width="15" height="34" />
+            <rect class="btn" x="272.73" y="668.5" width="17" height="34" />
+            <rect class="btn" x="287.73" y="623.5" width="20" height="34" />
+            <rect class="btn" x="289.73" y="668.5" width="20" height="34" />
+            <rect class="btn" x="307.73" y="623.5" width="20" height="34" />
+            <rect class="btn" x="309.73" y="668.5" width="16" height="34" />
+            <rect class="btn" x="325.73" y="668.5" width="16" height="34" />
+            <rect class="btn" x="341.73" y="668.5" width="22" height="34" />
+            <rect class="btn" x="363.73" y="668.5" width="21" height="34" />
+            <rect class="btn" x="384.73" y="668.5" width="17" height="34" />
+            <rect class="btn" x="401.73" y="668.5" width="16" height="34" />
+            <rect class="btn" x="417.73" y="668.5" width="21" height="34" />
+            <rect class="btn" x="466.73" y="668.5" width="19" height="34" />
+            <rect class="btn" x="438.73" y="668.5" width="14" height="34" />
+            <rect class="btn" x="452.73" y="668.5" width="14" height="34" />
+            <rect class="btn" x="485.73" y="668.5" width="14" height="34" />
+            <rect class="btn" x="499.73" y="668.5" width="12" height="34" />
+            <rect class="btn" x="511.73" y="668.5" width="10" height="34" />
+            <rect class="btn" x="343.73" y="623.5" width="22" height="34" />
+            <rect class="btn" x="365.73" y="623.5" width="22" height="34" />
+            <rect class="btn" x="307.73" y="580.5" width="17" height="34" />
+            <rect class="btn" x="324.73" y="580.5" width="16" height="34" />
+            <rect class="btn" x="327.73" y="623.5" width="16" height="34" />
+            <rect class="btn" x="340.73" y="580.5" width="17" height="34" />
+            <rect class="btn" x="357.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="289.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="284.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="272.73" y="580.5" width="17" height="34" />
+            <rect class="btn" x="301.73" y="535.5" width="19" height="34" />
+            <rect class="btn" x="285.73" y="490.5" width="15" height="34" />
+            <rect class="btn" x="314.73" y="490.5" width="20" height="34" />
+            <rect class="btn" x="334.73" y="490.5" width="20" height="34" />
+            <rect class="btn" x="330.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="365.73" y="535.5" width="19" height="34" />
+            <rect class="btn" x="404.73" y="535.5" width="21" height="34" />
+            <rect class="btn" x="347.73" y="535.5" width="18" height="34" />
+            <rect class="btn" x="396.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="387.73" y="623.5" width="18" height="34" />
+            <rect class="btn" x="414.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="432.73" y="580.5" width="22" height="34" />
+            <rect class="btn" x="454.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="473.73" y="580.5" width="20" height="34" />
+            <rect class="btn" x="493.73" y="580.5" width="20" height="34" />
+            <rect class="btn" x="526.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="567.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="593.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="611.73" y="580.5" width="18" height="34" />
+            <rect class="btn" x="653.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="693.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="693.73" y="623.5" width="17" height="34" />
+            <rect class="btn" x="710.73" y="623.5" width="16" height="34" />
+            <rect class="btn" x="726.73" y="623.5" width="16" height="34" />
+            <rect class="btn" x="742.73" y="623.5" width="13" height="34" />
+            <rect class="btn" x="755.73" y="623.5" width="10" height="34" />
+            <rect class="btn" x="765.73" y="623.5" width="17" height="34" />
+            <rect class="btn" x="782.73" y="623.5" width="20" height="34" />
+            <rect class="btn" x="802.73" y="623.5" width="15" height="34" />
+            <rect class="btn" x="817.73" y="623.5" width="22" height="34" />
+            <rect class="btn" x="839.73" y="623.5" width="18" height="34" />
+            <rect class="btn" x="857.73" y="623.5" width="17" height="34" />
+            <rect class="btn" x="874.73" y="623.5" width="20" height="34" />
+            <rect class="btn" x="894.73" y="623.5" width="10" height="34" />
+            <rect class="btn" x="904.73" y="623.5" width="19" height="34" />
+            <rect class="btn" x="712.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="731.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="750.73" y="580.5" width="19" height="34" />
+            <rect class="btn" x="769.73" y="580.5" width="21" height="34" />
+            <rect class="btn" x="672.73" y="580.5" width="21" height="34" />
+            <rect class="btn" x="629.73" y="580.5" width="24" height="34" />
+            <rect class="btn" x="639.73" y="623.5" width="19" height="34" />
+            <rect class="btn" x="658.73" y="623.5" width="15" height="34" />
+            <rect class="btn" x="673.73" y="623.5" width="20" height="34" />
+            <rect class="btn" x="544.73" y="580.5" width="23" height="34" />
+            <rect class="btn" x="513.73" y="580.5" width="13" height="34" />
+            <rect class="btn" x="364.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="384.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="376.73" y="580.5" width="20" height="34" />
+            <rect class="btn" x="405.73" y="623.5" width="17" height="34" />
+            <rect class="btn" x="422.73" y="623.5" width="17" height="34" />
+            <rect class="btn" x="439.73" y="623.5" width="21" height="34" />
+            <rect class="btn" x="460.73" y="623.5" width="19" height="34" />
+            <rect class="btn" x="479.73" y="623.5" width="19" height="34" />
+            <rect class="btn" x="498.73" y="623.5" width="22" height="34" />
+            <rect class="btn" x="520.73" y="623.5" width="22" height="34" />
+            <rect class="btn" x="521.73" y="668.5" width="20" height="34" />
+            <rect class="btn" x="541.73" y="668.5" width="20" height="34" />
+            <rect class="btn" x="583.73" y="668.5" width="20" height="34" />
+            <rect class="btn" x="603.73" y="668.5" width="22" height="34" />
+            <rect class="btn" x="625.73" y="668.5" width="17" height="34" />
+            <rect class="btn" x="642.73" y="668.5" width="19" height="34" />
+            <rect class="btn" x="661.73" y="668.5" width="21" height="34" />
+            <rect class="btn" x="682.73" y="668.5" width="21" height="34" />
+            <rect class="btn" x="703.73" y="668.5" width="19" height="34" />
+            <rect class="btn" x="722.73" y="668.5" width="21" height="34" />
+            <rect class="btn" x="743.73" y="668.5" width="21" height="34" />
+            <rect class="btn" x="764.73" y="668.5" width="18" height="34" />
+            <rect class="btn" x="782.73" y="668.5" width="18" height="34" />
+            <rect class="btn" x="800.73" y="668.5" width="18" height="34" />
+            <rect class="btn" x="818.73" y="668.5" width="18" height="34" />
+            <rect class="btn" x="836.73" y="668.5" width="18" height="34" />
+            <rect class="btn" x="854.73" y="668.5" width="16" height="34" />
+            <rect class="btn" x="870.73" y="668.5" width="16" height="34" />
+            <rect class="btn" x="886.73" y="668.5" width="22" height="34" />
+            <rect class="btn" x="908.73" y="668.5" width="18" height="34" />
+            <rect class="btn" x="561.73" y="668.5" width="15" height="34" />
+            <rect class="btn" x="542.73" y="623.5" width="19" height="34" />
+            <rect class="btn" x="561.73" y="623.5" width="19" height="34" />
+            <rect class="btn" x="580.73" y="623.5" width="20" height="34" />
+            <rect class="btn" x="600.73" y="623.5" width="16" height="34" />
+            <rect class="btn" x="623.73" y="623.5" width="16" height="34" />
+            <rect class="btn" x="425.73" y="535.5" width="22" height="34" />
+            <rect class="btn" x="383.73" y="490.5" width="24" height="34" />
+            <rect class="btn" x="407.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="300.73" y="490.5" width="14" height="34" />
+            <rect class="btn" x="326.73" y="445.5" width="18" height="34" />
+            <rect class="btn" x="360.73" y="445.5" width="14" height="34" />
+            <rect class="btn" x="374.73" y="445.5" width="17" height="34" />
+            <rect class="btn" x="344.73" y="445.5" width="8" height="34" />
+            <rect class="btn" x="391.73" y="445.5" width="9" height="34" />
+            <rect class="btn" x="352.73" y="445.5" width="8" height="34" />
+            <rect class="btn" x="354.73" y="490.5" width="10" height="34" />
+            <rect class="btn" x="320.73" y="535.5" width="10" height="34" />
+            <rect class="btn" x="289.73" y="401.5" width="19" height="34" />
+            <rect class="btn" x="304.73" y="445.5" width="22" height="34" />
+            <rect class="btn" x="308.73" y="401.5" width="19" height="34" />
+            <rect class="btn" x="327.73" y="401.5" width="19" height="34" />
+            <rect class="btn" x="346.73" y="401.5" width="21" height="34" />
+            <rect class="btn" x="367.73" y="401.5" width="20" height="34" />
+            <rect class="btn" x="387.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="400.73" y="445.5" width="18" height="34" />
+            <rect class="btn" x="424.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="447.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="441.73" y="490.5" width="21" height="34" />
+            <rect class="btn" x="462.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="482.73" y="535.5" width="19" height="34" />
+            <rect class="btn" x="500.73" y="490.5" width="16" height="34" />
+            <rect class="btn" x="557.73" y="490.5" width="16" height="34" />
+            <rect class="btn" x="573.73" y="490.5" width="18" height="34" />
+            <rect class="btn" x="616.73" y="490.5" width="18" height="34" />
+            <rect class="btn" x="615.73" y="535.5" width="16" height="34" />
+            <rect class="btn" x="631.73" y="535.5" width="18" height="34" />
+            <rect class="btn" x="649.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="669.73" y="535.5" width="22" height="34" />
+            <rect class="btn" x="691.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="711.73" y="535.5" width="22" height="34" />
+            <rect class="btn" x="733.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="753.73" y="535.5" width="24" height="34" />
+            <rect class="btn" x="777.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="790.73" y="580.5" width="17" height="34" />
+            <rect class="btn" x="804.73" y="535.5" width="16" height="34" />
+            <rect class="btn" x="807.73" y="580.5" width="21" height="34" />
+            <rect class="btn" x="828.73" y="580.5" width="20" height="34" />
+            <rect class="btn" x="848.73" y="580.5" width="17" height="34" />
+            <rect class="btn" x="865.73" y="580.5" width="17" height="34" />
+            <rect class="btn" x="882.73" y="580.5" width="21" height="34" />
+            <rect class="btn" x="903.73" y="580.5" width="23" height="34" />
+            <rect class="btn" x="926.73" y="580.5" width="20" height="34" />
+            <rect class="btn" x="820.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="837.73" y="535.5" width="21" height="34" />
+            <rect class="btn" x="858.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="875.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="895.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="516.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="481.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="464.73" y="535.5" width="18" height="34" />
+            <rect class="btn" x="501.73" y="535.5" width="19" height="34" />
+            <rect class="btn" x="520.73" y="535.5" width="17" height="34" />
+            <rect class="btn" x="537.73" y="535.5" width="18" height="34" />
+            <rect class="btn" x="555.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="575.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="405.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="423.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="418.73" y="445.5" width="18" height="34" />
+            <rect class="btn" x="436.73" y="445.5" width="20" height="34" />
+            <rect class="btn" x="456.73" y="445.5" width="15" height="34" />
+            <rect class="btn" x="471.73" y="445.5" width="15" height="34" />
+            <rect class="btn" x="486.73" y="445.5" width="16" height="34" />
+            <rect class="btn" x="502.73" y="445.5" width="14" height="34" />
+            <rect class="btn" x="516.73" y="445.5" width="13" height="34" />
+            <rect class="btn" x="644.73" y="445.5" width="13" height="34" />
+            <rect class="btn" x="551.73" y="445.5" width="19" height="34" />
+            <rect class="btn" x="441.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="459.73" y="401.5" width="21" height="34" />
+            <rect class="btn" x="480.73" y="401.5" width="17" height="34" />
+            <rect class="btn" x="497.73" y="401.5" width="20" height="34" />
+            <rect class="btn" x="517.73" y="401.5" width="20" height="34" />
+            <rect class="btn" x="537.73" y="401.5" width="22" height="34" />
+            <rect class="btn" x="529.73" y="445.5" width="22" height="34" />
+            <rect class="btn" x="535.73" y="490.5" width="22" height="34" />
+            <rect class="btn" x="580.73" y="401.5" width="22" height="34" />
+            <rect class="btn" x="576.73" y="445.5" width="19" height="34" />
+            <rect class="btn" x="610.73" y="445.5" width="19" height="34" />
+            <rect class="btn" x="656.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="673.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="690.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="634.73" y="490.5" width="22" height="34" />
+            <rect class="btn" x="597.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="600.73" y="535.5" width="15" height="34" />
+            <rect class="btn" x="595.73" y="445.5" width="15" height="34" />
+            <rect class="btn" x="629.73" y="445.5" width="15" height="34" />
+            <rect class="btn" x="602.73" y="401.5" width="22" height="34" />
+            <rect class="btn" x="628.73" y="401.5" width="19" height="34" />
+            <rect class="btn" x="647.73" y="401.5" width="16" height="34" />
+            <rect class="btn" x="657.73" y="445.5" width="18" height="34" />
+            <rect class="btn" x="559.73" y="401.5" width="21" height="34" />
+            <rect class="btn" x="299.73" y="312.5" width="21" height="34" />
+            <rect class="btn" x="320.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="429.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="444.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="447.73" y="312.5" width="17" height="34" />
+            <rect class="btn" x="464.73" y="312.5" width="16" height="34" />
+            <rect class="btn" x="462.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="480.73" y="312.5" width="17" height="34" />
+            <rect class="btn" x="480.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="499.73" y="357.5" width="20" height="34" />
+            <rect class="btn" x="715.73" y="401.5" width="20" height="34" />
+            <rect class="btn" x="519.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="537.73" y="357.5" width="16" height="34" />
+            <rect class="btn" x="497.73" y="312.5" width="17" height="34" />
+            <rect class="btn" x="514.73" y="312.5" width="19" height="34" />
+            <rect class="btn" x="533.73" y="312.5" width="19" height="34" />
+            <rect class="btn" x="553.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="572.73" y="357.5" width="20" height="34" />
+            <rect class="btn" x="608.73" y="357.5" width="20" height="34" />
+            <rect class="btn" x="628.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="663.73" y="401.5" width="17" height="34" />
+            <rect class="btn" x="667.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="735.73" y="401.5" width="15" height="34" />
+            <rect class="btn" x="752.73" y="445.5" width="23" height="34" />
+            <rect class="btn" x="775.73" y="445.5" width="20" height="34" />
+            <rect class="btn" x="709.73" y="490.5" width="20" height="34" />
+            <rect class="btn" x="729.73" y="490.5" width="22" height="34" />
+            <rect class="btn" x="768.73" y="490.5" width="18" height="34" />
+            <rect class="btn" x="786.73" y="490.5" width="16" height="34" />
+            <rect class="btn" x="795.73" y="445.5" width="17" height="34" />
+            <rect class="btn" x="818.73" y="490.5" width="20" height="34" />
+            <rect class="btn" x="838.73" y="490.5" width="20" height="34" />
+            <rect class="btn" x="858.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="794.73" y="535.5" width="10" height="34" />
+            <rect class="btn" x="914.73" y="490.5" width="19" height="34" />
+            <rect class="btn" x="915.73" y="535.5" width="20" height="34" />
+            <rect class="btn" x="875.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="812.73" y="445.5" width="16" height="34" />
+            <rect class="btn" x="711.73" y="445.5" width="24" height="34" />
+            <rect class="btn" x="735.73" y="445.5" width="17" height="34" />
+            <rect class="btn" x="751.73" y="490.5" width="17" height="34" />
+            <rect class="btn" x="802.73" y="490.5" width="16" height="34" />
+            <rect class="btn" x="684.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="645.73" y="357.5" width="22" height="34" />
+            <rect class="btn" x="701.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="675.73" y="445.5" width="17" height="34" />
+            <rect class="btn" x="718.73" y="357.5" width="16" height="34" />
+            <rect class="btn" x="700.73" y="401.5" width="15" height="34" />
+            <rect class="btn" x="552.73" y="312.5" width="19" height="34" />
+            <rect class="btn" x="587.73" y="312.5" width="19" height="34" />
+            <rect class="btn" x="571.73" y="312.5" width="16" height="34" />
+            <rect class="btn" x="650.73" y="312.5" width="9" height="34" />
+            <rect class="btn" x="592.73" y="357.5" width="11" height="34" />
+            <rect class="btn" x="659.73" y="312.5" width="9" height="34" />
+            <rect class="btn" x="750.73" y="401.5" width="9" height="34" />
+            <rect class="btn" x="759.73" y="401.5" width="14" height="34" />
+            <rect class="btn" x="726.73" y="312.5" width="10" height="34" />
+            <rect class="btn" x="338.73" y="312.5" width="16" height="34" />
+            <rect class="btn" x="354.73" y="312.5" width="21" height="34" />
+            <rect class="btn" x="375.73" y="312.5" width="21" height="34" />
+            <rect class="btn" x="404.73" y="357.5" width="19" height="34" />
+            <rect class="btn" x="423.73" y="357.5" width="21" height="34" />
+            <rect class="btn" x="396.73" y="312.5" width="23" height="34" />
+            <rect class="btn" x="381.73" y="357.5" width="23" height="34" />
+            <rect class="btn" x="272.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="291.73" y="267.5" width="24" height="34" />
+            <rect class="btn" x="315.73" y="267.5" width="20" height="34" />
+            <rect class="btn" x="335.73" y="267.5" width="10" height="34" />
+            <rect class="btn" x="419.73" y="312.5" width="10" height="34" />
+            <rect class="btn" x="294.73" y="357.5" width="10" height="34" />
+            <rect class="btn" x="345.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="362.73" y="267.5" width="13" height="34" />
+            <rect class="btn" x="375.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="394.73" y="267.5" width="21" height="34" />
+            <rect class="btn" x="415.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="432.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="451.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="494.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="537.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="556.73" y="267.5" width="18" height="34" />
+            <rect class="btn" x="574.73" y="267.5" width="18" height="34" />
+            <rect class="btn" x="602.73" y="267.5" width="22" height="34" />
+            <rect class="btn" x="673.73" y="267.5" width="20" height="34" />
+            <rect class="btn" x="693.73" y="267.5" width="24" height="34" />
+            <rect class="btn" x="736.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="717.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="768.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="785.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="802.73" y="267.5" width="22" height="34" />
+            <rect class="btn" x="786.73" y="312.5" width="22" height="34" />
+            <rect class="btn" x="680.73" y="401.5" width="20" height="34" />
+            <rect class="btn" x="824.73" y="267.5" width="21" height="34" />
+            <rect class="btn" x="845.73" y="267.5" width="21" height="34" />
+            <rect class="btn" x="866.73" y="267.5" width="19" height="34" />
+            <rect class="btn" x="885.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="902.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="919.73" y="267.5" width="24" height="34" />
+            <rect class="btn" x="897.73" y="312.5" width="22" height="34" />
+            <rect class="btn" x="753.73" y="267.5" width="15" height="34" />
+            <rect class="btn" x="651.73" y="267.5" width="22" height="34" />
+            <rect class="btn" x="624.73" y="267.5" width="10" height="34" />
+            <rect class="btn" x="634.73" y="267.5" width="17" height="34" />
+            <rect class="btn" x="615.73" y="312.5" width="17" height="34" />
+            <rect class="btn" x="632.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="668.73" y="312.5" width="20" height="34" />
+            <rect class="btn" x="688.73" y="312.5" width="20" height="34" />
+            <rect class="btn" x="708.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="736.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="734.73" y="357.5" width="16" height="34" />
+            <rect class="btn" x="750.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="773.73" y="401.5" width="16" height="34" />
+            <rect class="btn" x="789.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="768.73" y="357.5" width="16" height="34" />
+            <rect class="btn" x="807.73" y="401.5" width="15" height="34" />
+            <rect class="btn" x="784.73" y="357.5" width="16" height="34" />
+            <rect class="btn" x="754.73" y="312.5" width="17" height="34" />
+            <rect class="btn" x="771.73" y="312.5" width="15" height="34" />
+            <rect class="btn" x="808.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="800.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="839.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="857.73" y="401.5" width="17" height="34" />
+            <rect class="btn" x="874.73" y="401.5" width="17" height="34" />
+            <rect class="btn" x="891.73" y="401.5" width="18" height="34" />
+            <rect class="btn" x="909.73" y="401.5" width="20" height="34" />
+            <rect class="btn" x="817.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="844.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="834.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="852.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="862.73" y="312.5" width="17" height="34" />
+            <rect class="btn" x="870.73" y="357.5" width="17" height="34" />
+            <rect class="btn" x="822.73" y="401.5" width="17" height="34" />
+            <rect class="btn" x="828.73" y="445.5" width="22" height="34" />
+            <rect class="btn" x="850.73" y="445.5" width="22" height="34" />
+            <rect class="btn" x="892.73" y="490.5" width="22" height="34" />
+            <rect class="btn" x="892.73" y="445.5" width="25" height="34" />
+            <rect class="btn" x="872.73" y="445.5" width="20" height="34" />
+            <rect class="btn" x="692.73" y="445.5" width="19" height="34" />
+            <rect class="btn" x="887.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="905.73" y="357.5" width="18" height="34" />
+            <rect class="btn" x="879.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="826.73" y="312.5" width="18" height="34" />
+            <rect class="btn" x="470.73" y="267.5" width="24" height="34" />
+            <rect class="btn" x="513.73" y="267.5" width="24" height="34" />
         </g>
+        <rect class="btn" x="592.73" y="267.5" width="10" height="34" />
+        <rect class="btn" x="606.73" y="312.5" width="9" height="34" />
+        <rect class="btn" x="603.73" y="357.5" width="5" height="34" />
+        <rect class="btn" x="624.73" y="401.5" width="5" height="34" />
+        <rect class="btn" x="570.73" y="445.5" width="6" height="34" />
+        <rect class="btn" x="591.73" y="490.5" width="6" height="34" />
+        <rect class="btn" x="595.73" y="535.5" width="5" height="34" />
+        <rect class="btn" x="585.73" y="580.5" width="8" height="34" />
+        <rect class="btn" x="616.73" y="623.5" width="7" height="34" />
+        <rect class="btn" x="576.73" y="668.5" width="7" height="34" />
     </svg>
+    <form>
+        <input name="color-select" type="radio" id="black" value="black">
+        <input name="color-select" type="radio" id="red" value="red">
+        <input name="color-select" type="radio" id="green" value="green">
+        <input name="color-select" type="radio" id="blue" value="blue">
+        <input name="color-select" type="radio" id="yellow" value="yellow">
+        <input name="color-select" type="radio" id="magenta" value="magenta">
+        <input name="color-select" type="radio" id="cyan" value="cyan">
+        <input name="color-select" type="radio" id="white" value="white">
+
+        <label class="true" for="black"></label>
+        <label for="red"></label>
+        <label for="green"></label>
+        <label for="blue"></label>
+        <label for="yellow"></label>
+        <label for="magenta"></label>
+        <label for="cyan"></label>
+        <label for="white"></label>
+
+
+
+    </form>
+
     <script>
-        let btns = document.querySelectorAll('btn')
-document.addEventListener('click', (event)=>{
-    if(event.target.classList.contains('btn')){
-        event.target.classList.toggle('visible')
-    }
-})
+        let CURRENT = 'black'
+        document.addEventListener('click', (event) => {
+            if (event.target.classList.contains('btn')) {
+                if (!event.target.getAttribute('class').includes(CURRENT)) {
+                    event.target.setAttribute('class', 'btn')
+                    event.target.classList.add(CURRENT)
+                }
+                else {
+                    event.target.setAttribute('class', 'btn')
+                }
+            }
+            if (event.target.nodeName == 'LABEL') {
+                document.querySelector('.true').classList.remove('true')
+                CURRENT = event.target.getAttribute('for').toString()
+                event.target.classList.add('true')
+            }
+        })
     </script>
 </body>
 
